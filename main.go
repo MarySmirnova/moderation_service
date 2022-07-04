@@ -5,7 +5,7 @@ import (
 
 	"github.com/MarySmirnova/moderation_service/internal"
 	"github.com/MarySmirnova/moderation_service/internal/config"
-	"github.com/caarlos0/env"
+	"github.com/caarlos0/env/v6"
 	"github.com/joho/godotenv"
 
 	log "github.com/sirupsen/logrus"
