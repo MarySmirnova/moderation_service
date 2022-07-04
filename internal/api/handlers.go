@@ -26,6 +26,7 @@ func (m *Moderator) ModerateHandler(w http.ResponseWriter, r *http.Request) {
 
 	words := strings.Fields(comment.Text)
 	for _, word := range words {
+
 		if _, ok := m.forbiddenWords[word]; ok {
 			m.writeResponseError(w, ErrBlocked, http.StatusBadRequest)
 			return
